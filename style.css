@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Space+Mono&display=swap');
 
+body{
+    background-color: black;
+}
 *{
     margin:0;
     padding:0;
@@ -8,6 +11,7 @@
     text-decoration: none;
     font-family: 'Inter', sans-serif;
     font-family: 'Space Mono', monospace;
+    color: white;
 }
 
 .container{
@@ -15,17 +19,19 @@
     border: 1px solid red;
     margin: 0 auto;
 }
+
 nav {
     height: 55px;
     width: 952px;
     max-width: 952px;
     border: 1px solid red;
+    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
     position: sticky;
     top: 0;     /*when use position: sticky don't forget top: 0*/
-    margin: 0 auto;
 }
 nav ul{
     display: flex;
@@ -38,6 +44,36 @@ nav ul{
     font-family: 'Alex Brush', cursive;
     font-size: 32px;
 }
+
+.contact{
+    display:flex;
+    justify-content: space-between;
+    position:fixed;
+    width: 100%;
+    padding:0 60px;
+    bottom: 0px;
+}
+.contact ul{
+    height:380px;
+}
+.contact ul li img{
+    max-width: 35px;
+    max-height: 35px;
+    margin-bottom: 45px;
+    background-color: none;
+}
+.contact ul li .contact-mail{
+    writing-mode: vertical-rl;
+    letter-spacing: 2px;
+    margin-bottom: 45px;
+}
+.line{
+    background-color: white;
+    width: 1px;
+    height: 30%;
+    margin: 0 auto;
+}
+
 .home-info{
     margin-top: 186px;
     max-width: 474px;
@@ -55,4 +91,9 @@ nav ul{
 .home-scroll{
     text-align: center;
     text-transform: uppercase;
+}
+.home-scroll img{
+    margin-top: 12px;
+    width: 53px;
+    height: 53px;
 }
