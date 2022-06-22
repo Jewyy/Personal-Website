@@ -12,6 +12,7 @@ body{
     font-family: 'Inter', sans-serif;
     font-family: 'Space Mono', monospace;
     color: white;
+    list-style-type:none;
 }
 
 .container{
@@ -63,7 +64,7 @@ nav ul{
     background-color: none;
 }
 .contact ul li .contact-mail{
-    writing-mode: vertical-rl;
+    writing-mode: vertical-rl; 
     letter-spacing: 2px;
     margin-bottom: 45px;
 }
@@ -79,7 +80,7 @@ nav ul{
     max-width: 474px;
 }
 .home-title h1{
-    margin-top: 23px;
+    margin-top: 54px;
     font-size: 100px;
     text-align: right;
     line-height: 100px;
