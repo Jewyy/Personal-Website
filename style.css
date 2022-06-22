@@ -1,35 +1,12 @@
 *{
-margin:0;
-padding:0;
-box-sizing: border-box;
-text-decoration: none;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
 }
 
 .max-width{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
-}
-
-.navbar{
-    width: 100%;
-    position: fixed;
-    background: rebeccapurple;
-}
-.navbar .menu li {
-    display: inline-block;
-    list-style: none;
-}
-.navbar .menu li a {
-    color: azure;
-}
-.navbar .max-width {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-.navbar .logo li a {
-    color: aqua;
-    font-size: 35px;
-    font-weight: 700;
 }
