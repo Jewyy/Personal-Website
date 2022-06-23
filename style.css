@@ -60,10 +60,16 @@ nav ul{
     margin-bottom: 45px;
     background-color: none;
 }
+.contact ul li img:hover{
+    transform: translateY(5px);
+}
 .contact ul li .contact-mail{
     writing-mode: vertical-rl; 
     letter-spacing: 2px;
     margin-bottom: 45px;
+}
+.contact ul li .contact-mail:hover{
+    transform: translateY(5px);
 }
 .line{
     background-color: white;
