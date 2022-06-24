@@ -1,30 +1,83 @@
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Quicksand:wght@300;400;500;600;700&display=swap');
-body{
+
+body {
     background-color: black;
 
 }
-*{
-    margin:0;
-    padding:0;
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Quicksand', sans-serif;
     color: white;
-    list-style-type:none;
+    list-style-type: none;
 }
-.contain-all{
+
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.contain-all {
     padding: 0 5%;
 }
 
-.container{
+.container {
+    margin: 0 auto;
     height: auto;
     border: 3px solid rgb(166, 223, 43);
     display: flex;
     position: relative;
-    padding: 15%;
+    /* padding: 15%; */
 }
 
 nav {
+    margin: 0 auto;
     height: 55px;
     border: 1px solid red;
     background-color: black;
@@ -32,98 +85,114 @@ nav {
     justify-content: space-between;
     align-items: center;
     position: sticky;
-    top: 0;     /*when use position: sticky don't forget top: 0*/
+    top: 0;
+    /*when use position: sticky don't forget top: 0*/
     z-index: 2;
 }
-nav ul{
+
+nav ul {
     display: flex;
     list-style: none;
     width: 474px;
     border: 1px solid rebeccapurple;
     justify-content: space-between;
 }
+
 .logo h3 {
     font-family: 'Alex Brush', cursive;
     font-size: 32px;
 }
 
-.contact{
-    display:flex;
+.contact {
+    display: flex;
     justify-content: space-between;
-    position:fixed;
+    position: fixed;
     right: 0;
     left: 0;
-    padding:7%; 
+    padding: 7%;
     z-index: 1;
-    align-items:flex-end;
+    align-items: flex-end;
     height: 100%;
 }
-.contact ul{
-    height:380px;
+
+.contact ul {
+    height: 380px;
 }
-.contact ul li img{
+
+.contact ul li img {
     max-width: 35px;
     max-height: 35px;
     margin-bottom: 45px;
     background-color: none;
 }
-.contact ul li img:hover{
+
+.contact ul li img:hover {
     transform: translateY(5px);
 }
-.contact ul li .contact-mail{
-    writing-mode: vertical-rl; 
+
+.contact ul li .contact-mail {
+    writing-mode: vertical-rl;
     letter-spacing: 2px;
     margin-bottom: 45px;
 }
-.contact ul li .contact-mail:hover{
+
+.contact ul li .contact-mail:hover {
     transform: translateY(5px);
 }
-.line{
+
+.line {
     background-color: white;
     width: 1px;
-    height: 30%;
+    height: 100%;
     margin: 0 auto;
 }
 
-.home-info{
+.home-info {
     margin-top: 186px;
     max-width: 474px;
     border: 1px solid rgb(21, 208, 255);
     display: inline-block;
-    position:relative;
+    position: relative;
 }
-.home-title h1{
+
+.home-title h1 {
     margin-top: 54px;
     font-size: 100px;
     text-align: right;
     line-height: 100px;
 }
-.home-content{
-    margin:  54px 0;
+
+.home-content {
+    margin: 54px 0;
     text-align: justify;
     font-size: 18px;
     text-indent: 10e;
 }
-.home-scroll{
+
+.home-scroll {
     text-align: center;
     text-transform: uppercase;
 }
-.home-scroll img{
+
+.home-scroll img {
     margin-top: 12px;
     width: 53px;
     height: 53px;
 }
-.home-personal-img{
+
+.home-personal-img {
     border: 3px solid rgb(209, 74, 200);
-    position:relative;
+    position: relative;
 
 }
-.home-personal-img img{
+
+.home-personal-img img {
     width: 100%;
     transform: scaleX(-1);
     filter: grayscale(100%);
     z-index: 2;
 }
-.home-personal-img img:hover{
+
+.home-personal-img img:hover {
     filter: none;
 }
