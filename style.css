@@ -110,7 +110,7 @@ nav ul {
     right: 0;
     left: 0;
     padding: 7%;
-    z-index: 1;
+    z-index: 0;
     align-items: flex-end;
     height: 100%;
 }
@@ -197,26 +197,60 @@ nav ul {
     filter: none;
 }
 
+education section{
+    width: 100%;
+    text-align: center;
+}
+
+section .line{
+    position:absolute;
+    display:inline;
+    justify-items: center;
+    justify-content: center;
+    z-index: -1;
+    width: 0.2vw;
+    height: 100vh;
+}
+
 .edu-group-content{
-    border:3px solid rgb(209, 94, 74);
-    display: flex;
+    border:3px solid rgb(255, 0, 102);
     margin: 5% 0;
+    /* max-width: 100%; */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
 }
 .edu-date{
     border:3px solid rgb(209, 74, 200);
+    width: 33.3%;
+    
+}
+
+.edu-img {
+    border:3px solid rgb(237, 145, 8);
+    width: 33%;
+    text-align: center; 
 }
 .edu-img img{
-    border:3px solid rgb(209, 74, 200);
+    border:3px solid aliceblue;
     max-width: 8.33vw;
+    background-color: aliceblue;
+    border-radius: 50%;
+}
+.edu-box{
+    border:3px solid rgb(255, 225, 0);
+    display: block;
+    width: 33.3%;
 }
 
-.edu-content-title{
+.edu-content-title h3{
     border:3px solid rgb(74, 209, 175);
     /* display: flex; */
+    /* max-width: 33%; */
 }
 
-.edu-content{
+.edu-content p{
     border:3px solid rgb(40, 146, 21);
     display: flex;
-    max-width: 37;
+    /* max-width: 33%; */
 }
