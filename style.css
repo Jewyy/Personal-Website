@@ -68,7 +68,7 @@ body {
 }
 
 .container {
-    margin: 0 auto;
+    margin: 5% auto;
     height: auto;
     border: 3px solid rgb(166, 223, 43);
     display: flex;
@@ -195,4 +195,28 @@ nav ul {
 
 .home-personal-img img:hover {
     filter: none;
+}
+
+.edu-group-content{
+    border:3px solid rgb(209, 94, 74);
+    display: flex;
+    margin: 5% 0;
+}
+.edu-date{
+    border:3px solid rgb(209, 74, 200);
+}
+.edu-img img{
+    border:3px solid rgb(209, 74, 200);
+    max-width: 8.33vw;
+}
+
+.edu-content-title{
+    border:3px solid rgb(74, 209, 175);
+    /* display: flex; */
+}
+
+.edu-content{
+    border:3px solid rgb(40, 146, 21);
+    display: flex;
+    max-width: 37;
 }
