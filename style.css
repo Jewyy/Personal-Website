@@ -15,6 +15,7 @@ html{
     font-family: 'Quicksand', sans-serif;
     color: white;
     list-style-type: none;
+    /* border: none !important; */
 }
 
 .col-1 {
@@ -221,7 +222,8 @@ education section{
 
 .edu-group-content{
     border:3px solid rgb(255, 0, 102);
-    margin: 5% 0;
+    margin: 15% 0;
+    /* padding: 10; */
     /* max-width: 100%; */
     display: flex;
     justify-content: space-between;
@@ -258,4 +260,31 @@ education section{
     border:3px solid rgb(40, 146, 21);
     display: flex;
     text-align: left;
+}
+contact section{
+    width: 100%;
+}
+
+.contact-info-box{
+    width: 100%;
+    border:3px solid rgb(2, 90, 138);
+}
+
+.contact-title{
+    text-align: center;
+    border:3px solid rgb(2, 90, 138);
+}
+.contact-content{
+    text-align: center;
+    border:3px solid rgb(155, 94, 20);
+    padding: 10%;
+}
+.contact-btn{
+    text-align: center;
+    border:3px solid rgb(180, 121, 182);
+    padding: 0 30px;
+    border-radius: 10px;
+    display:flex;
+    margin: 5% auto;
+    width: max-content;
 }
