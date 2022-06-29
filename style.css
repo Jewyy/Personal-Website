@@ -73,6 +73,7 @@ body {
     border: 3px solid rgb(166, 223, 43);
     display: flex;
     position: relative;
+    overflow: hidden;
     /* padding: 15%; */
 }
 
@@ -202,14 +203,18 @@ education section{
     text-align: center;
 }
 
-section .line{
-    position:absolute;
-    display:inline;
-    justify-items: center;
-    justify-content: center;
+ section .line{
     z-index: -1;
     width: 0.2vw;
-    height: 100vh;
+    height: 100%;
+    display: inline;
+    position:absolute;
+    /* justify-items: center; */
+    margin: 0 auto;
+}
+
+.edu-content-box{
+    border:3px solid rgb(255, 136, 0);
 }
 
 .edu-group-content{
@@ -245,12 +250,10 @@ section .line{
 
 .edu-content-title h3{
     border:3px solid rgb(74, 209, 175);
-    /* display: flex; */
-    /* max-width: 33%; */
 }
 
 .edu-content p{
     border:3px solid rgb(40, 146, 21);
     display: flex;
-    /* max-width: 33%; */
+    text-align: left;
 }
