@@ -83,7 +83,7 @@ html{
 nav {
     margin: 0 auto;
     height: 55px;
-    border: 1px solid red;
+    border: 2px solid red;
     background-color: black;
     display: flex;
     justify-content: space-between;
@@ -94,12 +94,65 @@ nav {
     z-index: 2;
 }
 
-nav ul {
+/* nav ul {
     display: flex;
     list-style: none;
     width: 474px;
-    border: 1px solid rebeccapurple;
-    justify-content: space-between;
+    border: 2px solid rgb(114, 56, 173);
+    justify-content: space-around;
+} */
+
+.contain-btn{
+    display: flex;
+    border: 2px solid rgb(147, 227, 8);
+}
+.nav-btn{
+    border: 2px solid rgb(255, 0, 0);
+    height: 25px;
+    width: 8.3vw ;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 16px;
+}
+i{
+    font-family: FontAwesome;
+    /* color:#eee; */
+    font-size:20px;
+    border: 1px solid rgb(6, 255, 255);
+}
+
+.nav-text{
+    /* visibility: hidden; */
+    text-transform: uppercase;
+    display: none; 
+     opacity: 0;
+    /* display:grid; */
+    padding: auto 0;
+}
+
+.nav-btn:hover .nav-text{
+    /* visibility: visible; */
+    display: block;
+    opacity: 100%;
+    transition: 0.5s;
+    color: black;
+    justify-content: center;
+    font-weight: 700;
+}
+.nav-btn:hover{
+    /* visibility: visible; */
+    display: block;
+    background-color: aliceblue;
+    border-radius: 5px;
+    opacity: 100%;
+    transition: 0.2s;
+}
+.nav-btn:hover  i{
+    /* visibility: hidden; */
+    display: none;
+    opacity: 0%;
+    transition: 0.5s;
 }
 
 .logo h3 {
