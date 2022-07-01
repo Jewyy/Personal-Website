@@ -382,11 +382,18 @@ contact section{
     padding: 10%;
 }
 .contact-btn{
-    text-align: center;
-    border:3px solid rgb(180, 121, 182);
-    padding: 0 30px;
+    /* text-align: center; */
+    border:2px solid rgb(180, 121, 182);
+    padding: 10px;
     border-radius: 10px;
     display:flex;
     margin: 5% auto;
-    width: max-content;
+    width: 12vw;
+    background-color: hsl(220, 46%, 48%, 0.4);
+    justify-content: center;
+    
+}
+
+.contact-btn:hover{
+    background-color: hsl(220, 46%, 48%, 0.6);
 }
