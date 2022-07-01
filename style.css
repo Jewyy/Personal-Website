@@ -241,10 +241,9 @@ nav i{
     text-transform: uppercase;
 }
 
-.home-scroll img {
-    margin-top: 12px;
-    width: 53px;
-    height: 53px;
+.home-scroll i{
+    margin-top: 25px;
+    font-size: 38px;
 }
 
 .home-personal-img {
