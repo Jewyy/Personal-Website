@@ -253,7 +253,7 @@ nav i{
 .home-personal-img img {
     width: 100%;
     transform: scaleX(-1);
-    filter: grayscale(100%);
+    /* filter: grayscale(100%); */
     z-index: -1;
 }
 
@@ -285,6 +285,9 @@ education section{
     font-weight: 900;
     font-size: 64px;
 }
+.about-contain-info{
+    margin-bottom: 200px;
+}
 .about-content{
     margin-top: 25px;
     text-align: justify;
@@ -303,17 +306,20 @@ education section{
     margin: 0 10px;   
 }
 .about-personal-img {
-    border: 3px solid rgb(209, 74, 200) !important;
+    border: 3px solid rgb(209, 74, 200);
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-left: 15px;
+    margin: 0 60px;
 }
 .about-personal-img img {
-    width: 200px;
-        /* transform: scaleX(-1); */
-    /* filter: grayscale(100%); */
-    /* z-index: -1; */
+    padding: px;
+    width: 250px;
+    border: 5px solid #000000 !important;
+    background-color: #3f2301;
+    border-radius: 40px;
+    box-shadow: 10px 10px #ad8b73;
+
 }
 
 .edu-title h1{
@@ -323,6 +329,7 @@ education section{
 
 .edu-content-box{
     border:3px solid rgb(255, 136, 0);
+    padding: 30px;
 }
 
 .edu-group-content{
@@ -332,10 +339,12 @@ education section{
     display: flex;
     justify-content: space-between;
     text-align: center;
+    align-items: center;
 }
 .edu-date{
     border:3px solid rgb(209, 74, 200);
     width: 33.3%;
+    text-align: justify;
     
 }
 
@@ -345,7 +354,7 @@ education section{
     text-align: center; 
 }
 .edu-img img{
-    border:3px solid aliceblue;
+    border:3px solid aliceblue !important;
     max-width: 8.33vw;
     background-color: aliceblue;
     border-radius: 50%;
@@ -359,9 +368,14 @@ education section{
     transition: transform 0.8s;
 }
 .edu-box{
-    border:3px solid rgb(255, 225, 0);
+    border:5px solid rgb(0, 0, 0) !important;
     display: block;
     width: 33.3%;
+    background-color: #3f2301;
+    padding: 20px;
+
+    border-radius: 40px;
+    box-shadow: 10px 10px #ad8b73;
 }
 
 .edu-content-title h3{
