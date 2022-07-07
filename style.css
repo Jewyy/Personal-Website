@@ -279,6 +279,8 @@ education section{
 }
 .about-container{
     display: flex;
+    margin-top: 50px;
+    flex-direction: row-reverse;
 }
 .about-title h1{
     text-transform: uppercase;
@@ -310,7 +312,7 @@ education section{
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: 0 60px;
+    margin-right: 60px;
 }
 .about-personal-img img {
     padding: px;
