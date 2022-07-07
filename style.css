@@ -641,6 +641,7 @@ contact section{
     .edu-date{
         width: auto;
         margin-top: 80px;
+        background-color: #000000;
     }
     .edu-img{
         width: 33.3vw;
@@ -652,7 +653,7 @@ contact section{
     .edu-box{
         width: auto;
     }
-    .line{
-        background-color: ;
+    section .line{
+        width: 0.7vw;
     }
 }
