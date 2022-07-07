@@ -248,8 +248,6 @@ nav i{
     position: relative;
     display: flex;
     flex-direction: column;
-
-
 }
 
 .home-personal-img img {
@@ -276,7 +274,12 @@ education section{
     position:absolute;
     margin: 0 auto;
 }
-
+#about .container{
+    flex-wrap: wrap;
+}
+.about-container{
+    display: flex;
+}
 .about-title h1{
     text-transform: uppercase;
     font-weight: 900;
@@ -298,6 +301,19 @@ education section{
 }
 .about-skill-list li i{
     margin: 0 10px;   
+}
+.about-personal-img {
+    border: 3px solid rgb(209, 74, 200) !important;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+}
+.about-personal-img img {
+    width: 200px;
+        /* transform: scaleX(-1); */
+    /* filter: grayscale(100%); */
+    /* z-index: -1; */
 }
 
 .edu-title h1{
@@ -467,7 +483,7 @@ contact section{
     border-radius: 10px;
     display:flex;
     margin: 5% auto;
-    width: 12vw;
+    width: 150px;
     background-color: hsl(220, 46%, 48%, 0.4);
     justify-content: center;
     
