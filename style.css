@@ -321,7 +321,10 @@ education section{
     background-color: #3f2301;
     border-radius: 40px;
     box-shadow: 10px 10px #ad8b73;
-
+}
+.about-personal-img img:hover{
+    box-shadow: none;
+    transform: translate(10px, 10px);
 }
 
 .edu-title h1{
@@ -331,7 +334,7 @@ education section{
 
 .edu-content-box{
     border:3px solid rgb(255, 136, 0);
-    padding: 30px;
+    padding: 10px;
 }
 
 .edu-group-content{
@@ -343,16 +346,19 @@ education section{
     text-align: center;
     align-items: center;
 }
+.reverse{
+    flex-direction: row-reverse;
+}
 .edu-date{
     border:3px solid rgb(209, 74, 200);
     width: 33.3%;
-    text-align: justify;
+    text-align: left;
     
 }
 
 .edu-img {
     border:3px solid rgb(237, 145, 8);
-    width: 33%;
+    width: 33.3%;
     text-align: center; 
 }
 .edu-img img{
@@ -375,9 +381,13 @@ education section{
     width: 33.3%;
     background-color: #3f2301;
     padding: 20px;
-
     border-radius: 40px;
     box-shadow: 10px 10px #ad8b73;
+}
+.edu-box:hover{
+    box-shadow:none;
+    transform: translate(10px, 10px);
+    /* transition: transform 0.8s; */
 }
 
 .edu-content-title h3{
@@ -599,5 +609,50 @@ contact section{
         text-align: center;
         margin-top: 45px;
     }
+    #about .container{
+        justify-content: center;
+    }
+    .about-title{
+        margin-bottom: 20px;
+    }
+    .about-container{
+        margin: 0;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .about-personal-img{
+        margin: 0;
+    }
+    .about-contain-info{
+        margin-top: 20px;
+    }
+    .edu-content-box{
+        padding: 0;
+        align-content: center;
+        margin-bottom: 100px;
+    }
+    .edu-group-content{
+        padding: 0;
+        margin: 0;
+        justify-items: center;
+        flex-direction: column;
 
+    }
+    .edu-date{
+        width: auto;
+        margin-top: 80px;
+    }
+    .edu-img{
+        width: 33.3vw;
+        padding: 40px 0;
+    }
+    .edu-img img{
+        max-width: 33.3vw;
+    }
+    .edu-box{
+        width: auto;
+    }
+    .line{
+        background-color: ;
+    }
 }
