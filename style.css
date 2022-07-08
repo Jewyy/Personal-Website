@@ -582,19 +582,19 @@ contact section{
     .contact{
         display: none;
     }
-    .contain-btn #home{
+    .contain-btn #home-btn{
         display: none;
     }
-    .contain-btn #about{
+    .contain-btn #about-btn{
         display: none;
     }
-    .contain-btn #education{
+    .contain-btn #education-btn{
         display: none;
     }
-    .contain-btn #portfolio{
+    .contain-btn #portfolio-btn{
         display: none;
     }
-    .contain-btn #contact{
+    .contain-btn #contact-btn{
         display: none;
     }
     .contain-btn #sortbar{
