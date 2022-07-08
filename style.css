@@ -106,6 +106,9 @@ nav {
     display: flex;
     border: 2px solid rgb(147, 227, 8);
 }
+.contain-btn #sortbar{
+    display: none;
+}
 .nav-btn{
     border: 2px solid rgb(255, 0, 0);
     height: 25px;
@@ -579,8 +582,23 @@ contact section{
     .contact{
         display: none;
     }
-    .contain-btn{
+    .contain-btn #home{
         display: none;
+    }
+    .contain-btn #about{
+        display: none;
+    }
+    .contain-btn #education{
+        display: none;
+    }
+    .contain-btn #portfolio{
+        display: none;
+    }
+    .contain-btn #contact{
+        display: none;
+    }
+    .contain-btn #sortbar{
+        display: block;
     }
    
     #home section{
