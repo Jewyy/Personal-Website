@@ -227,6 +227,7 @@ nav i{
     font-size: 100px;
     text-align: right;
     line-height: 100px;
+    text-shadow: 5px 2px #ad8b73;
 }
 
 .home-content {
@@ -288,7 +289,8 @@ education section{
 .about-title h1{
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 64px;
+    font-size: 50px;
+    text-shadow: 5px 2px #ad8b73;
 }
 .about-contain-info{
     margin-bottom: 200px;
@@ -333,6 +335,7 @@ education section{
 .edu-title h1{
     font-size: 50px;
     text-transform: uppercase;
+    text-shadow: 5px 2px #ad8b73;
 }
 
 .edu-content-box{
@@ -396,6 +399,7 @@ education section{
 .edu-content-title h3{
     border:3px solid rgb(74, 209, 175);
     text-align: left;
+    
 }
 
 .edu-content p{
@@ -407,8 +411,10 @@ portfolio .container{
     display: block;
 }
 .port-title h1{
-    font-size: 64px;
+    text-align: center;
+    font-size: 55px;
     text-transform: uppercase;
+    text-shadow: 5px 2px #ad8b73;
 }
 .port-info-box{
     border:3px solid rgb(55, 137, 36);
@@ -496,9 +502,11 @@ contact section{
     text-align: center;
     text-transform: uppercase;
     border:3px solid rgb(2, 90, 138);
+
 }
 .contact-title h1{
-    font-size: 64px;
+    font-size: 50px;
+    text-shadow: 5px 2px #ad8b73;
 }
 .contact-content{
     text-align: center;
