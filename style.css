@@ -79,7 +79,9 @@ html{
     overflow: hidden;
     padding-top: 55px;
 }
-
+#fullpage .contact-btn{
+    display: none;
+}
 nav {
     margin: 0 auto;
     height: 55px;
@@ -91,7 +93,7 @@ nav {
     position: sticky;
     top: 0;
     /*when use position: sticky don't forget top: 0*/
-    z-index: 2;
+    z-index: 100;
 }
 
 /* nav ul {
@@ -101,6 +103,9 @@ nav {
     border: 2px solid rgb(114, 56, 173);
     justify-content: space-around;
 } */
+.contain-btn-full{
+    display: none;
+}
 
 .contain-btn{
     display: flex;
@@ -109,6 +114,13 @@ nav {
 .contain-btn #sortbar{
     display: none;
 }
+.contain-btn #cancel{
+    display: none;
+}
+.contact-btn-full a{
+    width: 100vw;
+}
+
 .nav-btn{
     border: 2px solid rgb(255, 0, 0);
     height: 25px;
@@ -181,7 +193,7 @@ nav i{
     font-size: 40px;
     margin-bottom: 45px;
     background-color: none;
-    overflow: hidden; 
+    /* overflow: hidden;  */
 }
 
 .contact ul li i:hover {
@@ -728,6 +740,42 @@ contact section{
     }
     .contact-contain-icon{
         visibility: visible;
+    }
+
+    .fullpage{
+        width: 100vw !important;
+        height: fit-content !important;
+        background-color: #fd5949;
+        position: fixed;
+        z-index: 100;
+        top: 55px;
+        left: 0;
+        /* padding: 10%; */
+    }
+    #fullpage .contain-btn-full{
+        display: none;
+        flex-direction: column;
+    }
+    
+    #fullpage .nav-btn{
+        background-color: #000000;
+        width: 100vw;
+        border: 2px solid rgb(255, 255, 255) !important;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+    }
+    #fullpage i{
+        font-size: 50px;
+    }
+    #fullpage .nav-btn:hover .nav-text{
+        display: block;
+        opacity: 100%;
+        transition: 0.5s;
+        color: white;
+        justify-content: center;
+        font-weight: 700;
+        font-size: 30px;
     }
        
 }
