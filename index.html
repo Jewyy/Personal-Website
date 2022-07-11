@@ -13,7 +13,7 @@
 <body>
     <div class="fullpage" id="fullpage">
         <div class="contain-btn-full">
-            <a href="#home" id="home-btn">
+            <a href="#home" id="home-btn" onclick="click_list_menu()">
                 <div class="nav-btn">
                     <div class="nav-text">
                         Home
@@ -22,7 +22,7 @@
                 </div>
             </a>
 
-            <a href="#about" id="about-btn">
+            <a href="#about" id="about-btn" onclick="click_list_menu()">
                 <div class="nav-btn">
                     <div class="nav-text">
                         About
@@ -31,7 +31,7 @@
                 </div>
             </a>
 
-            <a href="#education" id="education-btn">
+            <a href="#education" id="education-btn" onclick="click_list_menu()">
                 <div class="nav-btn">
                     <div class="nav-text">
                         Education
@@ -39,7 +39,7 @@
                     <i class="fa-solid fa-user-graduate"></i>
                 </div>
             </a>
-            <a href="#portfolio" id="portfolio-btn">
+            <a href="#portfolio" id="portfolio-btn" onclick="click_list_menu()">
                 <div class="nav-btn">
                     <div class="nav-text">
                         Portfolio
@@ -48,7 +48,7 @@
                 </div>
             </a>
 
-            <a href="#contact" id="contact-btn">
+            <a href="#contact" id="contact-btn" onclick="click_list_menu()">
                 <div class="nav-btn">
                     <div class="nav-text">
                         Contact
@@ -56,7 +56,7 @@
                     <i class="fa-solid fa-comments"></i>
                 </div>
             </a>
-          
+
 
         </div>
     </div>
@@ -111,12 +111,12 @@
                 </div>
             </a>
             <sortbar id="sortbar">
-                <a href="#sortbar">
+                <a href="javascript:void(0);" onclick="click_sortbar()">
                     <i class="fa-solid fa-bars"></i>
                 </a>
             </sortbar>
             <cancel id="cancel">
-                <a href="#cancel">
+                <a href="javascript:void(0);" onclick="click_cancel()">
                     <i class="fa-solid fa-xmark"></i>
                 </a>
             </cancel>
@@ -443,6 +443,58 @@
         </div>
     </contact>
 
+    <script>
+        function click_sortbar() {
+            var sortbar = document.getElementById("sortbar");
+            var cancel = document.getElementById("cancel");
+            var list_menu = document.getElementById("fullpage");
+            if (sortbar.style.display === "block") {
+                sortbar.style.display = "none";
+                cancel.style.display = "block";
+                list_menu.style.display = "block";
+            } 
+            else {
+                sortbar.style.display = "none";
+                cancel.style.display = "block";
+                list_menu.style.display = "block";
+            }
+        }
+    </script>
+        <script>
+            function click_cancel() {
+                var sortbar = document.getElementById("sortbar");
+                var cancel = document.getElementById("cancel");
+                var list_menu = document.getElementById("fullpage");
+                if (cancel.style.display === "block") {
+                    cancel.style.display = "none";
+                    sortbar.style.display = "block";
+                    list_menu.style.display = "none";
+                } 
+                // else {
+                //     // cancel.style.display = "block";
+                // }
+            }
+        </script>
+        <script>
+            function click_list_menu() {
+                var sortbar = document.getElementById("sortbar");
+                var cancel = document.getElementById("cancel");
+                var list_menu = document.getElementById("fullpage");
+                var home = document.getElementById("home");
+                var about = document.getElementById("about");
+                var education = document.getElementById("education");
+                var portfolio = document.getElementById("portfolio");
+                var contact = document.getElementById("contact");
+                if (list_menu.style.display === "block" ) {
+                    cancel.style.display = "none";
+                    sortbar.style.display = "block";
+                    list_menu.style.display = "none";
+                } 
+                // else {
+                //     // cancel.style.display = "block";
+                // }
+            }
+        </script>
 </body>
 
 </html>
