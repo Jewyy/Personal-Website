@@ -150,7 +150,7 @@
     </div>
 
     <home id="home">
-        <div class="container col-8 col-mo-12">
+        <div class="container col-8 col-mo-12 show-on-scroll">
             <section class="home-info col-6">
                 <div class="home-title">
                     <h3>Hi, my name is </h3>
@@ -175,7 +175,7 @@
     </home>
 
     <about id="about">
-        <div class="container col-8 col-mo-12">
+        <div class="container col-8 col-mo-12 show-on-scroll">
             <div class="about-title">
                 <h1>about</h1>
             </div>
@@ -216,7 +216,7 @@
     </about>
 
     <education id="education">
-        <div class="container col-8 col-mo-12">
+        <div class="container col-8 col-mo-12 show-on-scroll">
             <section>
                 <div class="edu-title">
                     <h1>Education & Experience</h1>
@@ -305,7 +305,7 @@
     </education>
 
     <portfolio id="portfolio">
-        <div class="container col-8 col-mo-12">
+        <div class="container col-8 col-mo-12 show-on-scroll">
             <div class="port-title">
                 <h1>Portfolio</h1>
             </div>
@@ -408,7 +408,7 @@
     </portfolio>
 
     <contact id="contact">
-        <div class="container col-8 col-mo-12">
+        <div class="container col-8 col-mo-12 show-on-scroll">
             <section>
                 <div class="contact-info-box">
                     <div class="contact-title">
@@ -443,58 +443,7 @@
         </div>
     </contact>
 
-    <script>
-        function click_sortbar() {
-            var sortbar = document.getElementById("sortbar");
-            var cancel = document.getElementById("cancel");
-            var list_menu = document.getElementById("fullpage");
-            if (sortbar.style.display === "block") {
-                sortbar.style.display = "none";
-                cancel.style.display = "block";
-                list_menu.style.display = "block";
-            } 
-            else {
-                sortbar.style.display = "none";
-                cancel.style.display = "block";
-                list_menu.style.display = "block";
-            }
-        }
-    </script>
-        <script>
-            function click_cancel() {
-                var sortbar = document.getElementById("sortbar");
-                var cancel = document.getElementById("cancel");
-                var list_menu = document.getElementById("fullpage");
-                if (cancel.style.display === "block") {
-                    cancel.style.display = "none";
-                    sortbar.style.display = "block";
-                    list_menu.style.display = "none";
-                } 
-                // else {
-                //     // cancel.style.display = "block";
-                // }
-            }
-        </script>
-        <script>
-            function click_list_menu() {
-                var sortbar = document.getElementById("sortbar");
-                var cancel = document.getElementById("cancel");
-                var list_menu = document.getElementById("fullpage");
-                var home = document.getElementById("home");
-                var about = document.getElementById("about");
-                var education = document.getElementById("education");
-                var portfolio = document.getElementById("portfolio");
-                var contact = document.getElementById("contact");
-                if (list_menu.style.display === "block" ) {
-                    cancel.style.display = "none";
-                    sortbar.style.display = "block";
-                    list_menu.style.display = "none";
-                } 
-                // else {
-                //     // cancel.style.display = "block";
-                // }
-            }
-        </script>
+    <script src="app.js"></script>
 </body>
 
 </html>
