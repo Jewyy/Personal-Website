@@ -1,70 +1,40 @@
 
 function click_sortbar() {
-    var sortbar = document.getElementById("sortbar");
-    var cancel = document.getElementById("cancel");
-    var list_menu = document.getElementById("full page");
-    if (sortbar.style.display === "block") {
-        sortbar.style.display = "none";
-        cancel.style.display = "block";
-        list_menu.style.display = "block";
-    }
-    else {
-        sortbar.style.display = "none";
-        cancel.style.display = "block";
-        list_menu.style.display = "block";
-    }
+  document.getElementById("sortbar").style.display = "none";
+  document.getElementById("cancel").style.display = "block";
+  document.getElementById("fullpage").style.width = "100%";
+
 }
 
 function click_cancel() {
-    var sortbar = document.getElementById("sortbar");
-    var cancel = document.getElementById("cancel");
-    var list_menu = document.getElementById("fullpage");
-    if (cancel.style.display === "block") {
-        cancel.style.display = "none";
-        sortbar.style.display = "block";
-        list_menu.style.display = "none";
-    }
-    // else {
-    //     // cancel.style.display = "block";
-    // }
+  document.getElementById("sortbar").style.display = "block";
+  document.getElementById("cancel").style.display = "none";
+  document.getElementById("fullpage").style.width = "0";
 }
 
 function click_list_menu() {
-    var sortbar = document.getElementById("sortbar");
-    var cancel = document.getElementById("cancel");
-    var list_menu = document.getElementById("fullpage");
-    var home = document.getElementById("home");
-    var about = document.getElementById("about");
-    var education = document.getElementById("education");
-    var portfolio = document.getElementById("portfolio");
-    var contact = document.getElementById("contact");
-    if (list_menu.style.display === "block") {
-        cancel.style.display = "none";
-        sortbar.style.display = "block";
-        list_menu.style.display = "none";
-    }
-    // else {
-    //     // cancel.style.display = "block";
-    // }
+  document.getElementById("sortbar").style.display = "block";
+  document.getElementById("cancel").style.display = "none";
+  document.getElementById("fullpage").style.width = "0";
 }
 
 // Detect request animation frame
 var scroll = window.requestAnimationFrame ||
-             // IE Fallback
-             function(callback){ window.setTimeout(callback, 1000/60)};
-var elementsToShow = document.querySelectorAll('.show-on-scroll'); 
+  // IE Fallback
+  function (callback) { window.setTimeout(callback, 1000 / 60) };
+var elementsToShow = document.querySelectorAll('.show-on-scroll');
 
 function loop() {
 
-    Array.prototype.forEach.call(elementsToShow, function(element){
-      if (isElementInViewport(element)) {
-        element.classList.add('is-visible');
-      } else {
-        element.classList.remove('is-visible');
-      }
-    });
+  Array.prototype.forEach.call(elementsToShow, function (element) {
+    if (isElementInViewport(element)) {
+      element.classList.add('is-visible');
+    } else {
+      element.classList.remove('is-visible');
+    }
+  });
 
-    scroll(loop);
+  scroll(loop);
 }
 
 // Call the loop for the first time

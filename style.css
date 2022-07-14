@@ -809,20 +809,18 @@ contact section{
         visibility: visible;
     }
     #fullpage{
-        display: none;
-    }
-
-    .fullpage{
-        width: 90vw !important;
-        height: 100vh !important;
-        background-color: rgb(0, 0, 0, 0.8) ;
-        position: fixed;
-        display: flex;
-        justify-content: flex-end;
+        display: block;
         z-index: 100;
+        background-color: rgba(0, 0, 0, 0.6);
+        height: 100%;
+        width: 0;
+        position: fixed;
         top: 55px;
         right: 0;
+        overflow-x: hidden;
+        transition: 0.8s;
     }
+
     #fullpage .contain-btn-full{
         display: flex;
         flex-direction: column;
@@ -832,11 +830,14 @@ contact section{
     
     #fullpage .nav-btn{
         background-color: #000000;
-        width: 90vw;
+        width: 60vw;
+        margin: 2%;
+        border-radius: 24px;
         border: 2px solid rgb(255, 255, 255) !important;
         height: 10vh;
         display: flex;
         align-items: center;
+
     }
     #fullpage i{
         font-size: 50px;
